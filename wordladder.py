@@ -148,7 +148,7 @@ class BucketsBuildMixin(GraphBase):
         d = {}
         for word in dictionary:
             for i in range(len(word)):
-                bucket = word[:i] + '_' + word[i+1:]
+                bucket = word[:i] + '_' + word[i + 1:]
                 if bucket in d:
                     d[bucket].append(word)
                 else:
